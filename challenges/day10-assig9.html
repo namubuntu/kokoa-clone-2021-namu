@@ -6,31 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>namubuntu try to build day10-assig9</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap');
+
         body{
+            font-family: 'Antonio', sans-serif;
             border: solid 5px teal;
+            padding:50px 30px;
+            width: 350px;
         }
-        .status-bar{
-            background-color: blue;
-            display:flex;
-            margin: 50px 0px 0px 20px;
+        
+        .status-bar__font{
+            margin-left:120px;
         }
-        .fa-times{
-            margin: 5px 5px 0px 0px;
-        }
+
         .now-music{
-            background-color: yellowgreen;
-            margin-left : 20px;
             display:flex;
+            margin:25px 0px 0px -5px;
+
         }
+
         .now-music__icon{
             border: solid black 2px;
             border-radius: 20%;
             background-color: yellow;
             height: 100px;
-            width: 100px;
-            align-items: center;
+            width: 100px; 
+            display:flex;
             justify-content: center;
+            align-items: center;
         }
+
+       .now-music__title{
+            margin-left: 10px;
+       }
+
+       h1{
+           margin-bottom: 10px;
+       }
+
+       .btns{
+           display: flex;
+           margin: 25px 0px 0px -5px;
+           justify-content: space-between;
+       }
+
+       .btns__play{
+           border: solid black 2px;
+           border-radius: 30%;
+           box-shadow: 0px 5px black;
+           height:50px;
+           width:150px;
+           display:flex;
+           justify-content: center;
+           align-items: center;
+       }
+
+       .btns__like, .btns__plus{
+           border: solid black 2px;
+           border-radius: 50%;
+           box-shadow: 0px 5px black;
+           height:50px;
+           width:50px;
+           display:flex;
+           justify-content: center;
+           align-items: center;
+       }
+
+       .btns__plus{
+           margin-right: 40px;
+       }
+
+       .underlists{
+           display: flex;
+           margin: 25px 0px;
+
+       }
+       .underlists__box1{
+        background-color: tomato;
+       }
+       .underlists__box2{
+        background-color: pink;
+       }
+       .underlists__box3{
+        background-color: blue;
+       }
+       .underlists__box4{
+        background-color: yellowgreen;
+       }
+       .underlists__boxsize{
+           border : solid black 2px;
+           border-radius:20%;
+           height:50px;
+           width:50px; 
+       }
+       
+       .underlists__texts{
+           margin-left: 10px;
+           display: flex;
+           flex-direction: column;
+       }
+
+       .underlists__title{
+        font-weight: bold;
+        margin-bottom: 5px;
+       }
+
+
     </style>
 </head>
 <body>
@@ -42,39 +123,56 @@
 
     <div class="now-music">
         <div class="now-music__icon">
-            <i class="fas fa-headphones-alt"></i>
+            <i class="fas fa-headphones-alt fa-2x"></i>
         </div>
-        <div>
+        <div class="now-music__title">
             <h1>PROGRAMER</h1>
             <span>by namubuntu</span>
         </div>        
     </div>
 
-    <div>
-        <div><i class="far fa-play-circle"></i><span>PLAY</span></div>
-        <div><i class="fas fa-heart"></i></div>
-        <div><i class="far fa-plus-square"></i></div>
+    <div class="btns">
+        <div class="btns__play">
+            <i class="far fa-play-circle"></i>
+            <span>PLAY</span>
+        </div>
+        <div class="btns__like">
+            <i class="fas fa-heart"></i>
+        </div>
+        <div class="btns__plus">
+            <i class="far fa-plus-square"></i>
+        </div>
     </div>
 
     <div>
-        <div>
-            <div></div>
-            <span>Matargasti</span>
-            <span>Mohit Chauhan</span>
+        <div class="underlists">
+            <div class="underlists__box1 underlists__boxsize"></div>
+            <div class="underlists__texts">
+                <span class="underlists__title">Matargasti</span>
+                <span>Mohit Chauhan</span>
+            </div>
         </div>
-        <div>
-            <div></div>
-            <span>Attitude</span>
-            <span>Lewis OfMan . Attitude</span>
+        <div class="underlists">
+            <div class="underlists__box2 underlists__boxsize"></div>
+            <div class="underlists__texts">
+                <span class="underlists__title">Attitude</span>
+                <span>Lewis OfMan . Attitude</span>
+            </div>
         </div>
-        <div>
-            <div></div>
-            <span>Try Everthing</span>
-            <span>Shakira.Zootopia</span>
+        <div class="underlists">
+            <div class="underlists__box3 underlists__boxsize"></div>
+            <div class="underlists__texts">
+                <span class="underlists__title">Try Everthing</span>
+                <span>Shakira.Zootopia</span>
+        
+            </div>
         </div>
-        <div>
-            <div></div><span>Sunflower</span>
-            <span>Joseph Vincent.Sunflower</span>
+        <div class="underlists">
+            <div class="underlists__box4 underlists__boxsize"></div>
+            <div class="underlists__texts">
+                <span class="underlists__title">Sunflower</span>
+                <span>Joseph Vincent.Sunflower</span>
+            </div>
         </div>
     </div>
  
